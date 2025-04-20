@@ -1,0 +1,23 @@
+import java.util.*;
+class prime_n
+{
+    public static void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int n=sc.nextInt();
+        int i,j,c;
+        for(i=1;i<=n;i++)
+        {
+            c=0;
+            for(j=1;j<=i;j++)
+            {
+                if(i%j==0)
+                    c++;
+            }
+            if(c==2)
+                System.out.print(i+" ");
+        }
+    }
+
+}
