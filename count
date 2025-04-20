@@ -1,0 +1,27 @@
+import java.util.*;
+class count_vow_con
+{
+    public static void main()
+    {
+        Scanner in=new Scanner(System.in);
+        System.out.println("Enter a string:");
+        String S=in.nextLine();
+        S=S.toUpperCase();
+        int i,v=0,c=0;
+        char ch;
+        for(i=0;i<S.length();i++)
+        {
+            ch=S.charAt(i);
+            if(Character.isLetter(ch)==true)
+            {
+            if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+                v++;
+            else
+                c++;
+            }
+        }
+        System.out.println("Vowels:"+v);
+        System.out.println("Consonants:"+c);
+    }
+}
+ 
